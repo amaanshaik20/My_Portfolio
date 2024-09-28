@@ -7,13 +7,15 @@
     --text-black-900: #302e4d;
     --text-black-700: #504e70;
 }
-body.dark{
+
+body.dark {
     --bg-black-900: #151515;
     --bg-black-100: #222222;
     --bg-black-50: #393939;
     --text-black-900: #ffffff;
     --text-black-700: #e9e9e9;
 }
+
 body {
 
     line-height: 1.5;
@@ -55,20 +57,23 @@ ul {
     overflow-x: hidden;
     transition: all 0.3s ease;
 }
-.section.back-section{
+
+.section.back-section {
     z-index: 1;
 }
-.section.active{
+
+.section.active {
     z-index: 2;
     opacity: 1;
     animation: slideSection 1s ease;
 }
-@keyframes slideSection{
-    0%
-    {
+
+@keyframes slideSection {
+    0% {
         transform: translateX(100%);
     }
-    100%{
+
+    100% {
         transform: translateX(0%);
     }
 }
@@ -151,7 +156,7 @@ ul {
     background: var(--skin-color);
     transition: all 0.3s ease;
 } */
-.btn{
+.btn {
     font-size: 16px;
     font-weight: 500;
     padding: 12px 35px;
@@ -254,7 +259,8 @@ ul {
     display: inline-block;
     position: relative;
 }
-.aside .nav-toggler.open span{
+
+.aside .nav-toggler.open span {
     background-color: transparent;
 }
 
@@ -268,8 +274,8 @@ ul {
     left: 0;
 }
 
-.aside .nav-toggler.open span::before{
-    transform:rotate(45deg);
+.aside .nav-toggler.open span::before {
+    transform: rotate(45deg);
     top: 0;
 }
 
@@ -282,8 +288,9 @@ ul {
     top: 6px;
     left: 0;
 }
-.aside .nav-toggler.open span::after{
-    transform:rotate(-45deg);
+
+.aside .nav-toggler.open span::after {
+    transform: rotate(-45deg);
     top: 0;
 }
 
@@ -510,8 +517,8 @@ h3.my-profession {
     line-height: 40px;
 }
 
-.about .about-content .education{
-/* .about .about-content .experience  */
+.about .about-content .education {
+    /* .about .about-content .experience  */
     flex: 0 0 70%;
     max-width: 70%;
     margin-top: 30px;
@@ -538,6 +545,7 @@ h3.my-profession {
     width: 100%;
     position: relative;
 }
+
 .about .about-content .timeline .timeline-item {
     position: relative;
     padding-left: 37px;
@@ -660,9 +668,12 @@ h3.my-profession {
     line-height: 25px;
 
 }
-.portfolio .container{
+
+.portfolio .container {
     padding-bottom: 40px;
 }
+
+
 .portfolio .portfolio-heading {
     flex: 0 0 100%;
     max-width: 100%;
@@ -697,6 +708,47 @@ h3.my-profession {
     display: block;
 }
 
+
+/* amaan */
+
+.gallery .container {
+    padding-bottom: 40px;
+}
+
+
+.gallery .gallery-heading {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+
+.gallery .gallery-heading h2 {
+    color: var(--text-black-900);
+    font-weight: 800;
+    font-size: 30px;
+
+}
+
+.gallery .gallery-item {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    margin-bottom: 30px;
+}
+
+.gallery .gallery-item-inner {
+    border: 6px solid var(--text-black-900);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    color: var(--text-black-900);
+    text-align: center;
+    padding: 3px;
+}
+
+.gallery .gallery-item-inner .gallery-img img {
+    width: 100%;
+    display: block;
+}
 
 .contact-title {
     color: var(--skin-color);
@@ -790,9 +842,10 @@ h3.my-profession {
 }
 
 @media (max-width:1199px) {
-    .section .container{
+    .section .container {
         padding-top: 70px;
     }
+
     .aside {
         left: -270px;
     }
@@ -800,21 +853,24 @@ h3.my-profession {
     /* .main-content {
         padding-left: 0;
     } */
-    .aside.open{
+    .aside.open {
         left: 0;
     }
-    .aside .nav-toggler{
+
+    .aside .nav-toggler {
         display: flex;
         left: 30px;
     }
-    .aside .nav-toggler.open{
+
+    .aside .nav-toggler.open {
         left: 300px;
     }
-    
-    .section{
+
+    .section {
         left: 0;
     }
-    .section.open{
+
+    .section.open {
         left: 270px;
     }
 
@@ -843,19 +899,20 @@ h3.my-profession {
         margin: 100px;
     }
 }
-@media (max-width:767px) 
-{
- .contact .contact-form .col-6,
-.contact .contact-info-item,
-.portfolio .portfolio-item,
-.service .service-item,
-.about .about-content .experience,
-.about .about-content .education,
-.about .about-content .skills,
-.about .about-content .personal-info {
-    flex: 0 0 100%;
-    max-width: 100%;
-}
+
+@media (max-width:767px) {
+
+    .contact .contact-form .col-6,
+    .contact .contact-info-item,
+    .portfolio .portfolio-item,
+    .service .service-item,
+    .about .about-content .experience,
+    .about .about-content .education,
+    .about .about-content .skills,
+    .about .about-content .personal-info {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
 
 .contact-icons i {
@@ -882,10 +939,14 @@ h3.my-profession {
     color: #000;
     box-shadow: 0 0 20px rgb(197, 207, 207); */
     transform: scale(1.5);
-} 
-.portfolio-item:hover{
-    transform: scale(1.1);
-    
 }
 
+.portfolio-item:hover {
+    transform: scale(1.1);
 
+}
+
+.gallery-item:hover {
+    transform: scale(1.1);
+
+}
