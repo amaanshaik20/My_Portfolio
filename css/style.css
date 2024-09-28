@@ -144,18 +144,14 @@ ul {
     position: relative;
 }
 
-/* .about-content {
-    font-size: 16px;
-    font-weight: 500;
-    padding: 12px 35px;
-    color: white;
-    border-radius: 40px;
-    display: inline-block;
-    white-space: nowrap;
-    border: none;
-    background: var(--skin-color);
-    transition: all 0.3s ease;
-} */
+.row1 {
+    display: flex;
+    flex-wrap: wrap;
+    /* margin-left: -15px;
+    margin-right: -15px; */
+    position: absolute;
+}
+
 .btn {
     font-size: 16px;
     font-weight: 500;
@@ -737,25 +733,27 @@ h3.my-profession {
 }
 
 .gallery .gallery-item-inner {
-    border-radius: 30px;
-    /* overflow: hidden; */
+    /* border-radius: 30px; */
+    overflow: hidden;
     cursor: pointer;
     /* color: var(--text-black-900); */
     text-align: center;
     padding: 3px;
-    max-height: 350px;
-    max-width: 350px;
+    /* max-height: 350px;
+    max-width: 350px; */
+    border: 6px solid var(--skin-color);
 
 }
 
 .gallery .gallery-item-inner .gallery-img img {
     width: 100%;
     display: block;
-    object-fit: cover;
+    /* object-fit: cover; */
     border-radius: 30px;
     border: 6px solid var(--text-black-900);
-    max-height: 350px;
-    max-width: 350px;
+    /* max-height: 450px; */
+    /* min-height: 450px; */
+    /* max-width: 350px; */
 }
 
 .portfolio-item:hover {
