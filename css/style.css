@@ -733,27 +733,26 @@ h3.my-profession {
 }
 
 .gallery .gallery-item-inner {
-    /* border-radius: 30px; */
+    border-radius: 30px;
     overflow: hidden;
     cursor: pointer;
     /* color: var(--text-black-900); */
     text-align: center;
-    padding: 3px;
-    /* max-height: 350px;
-    max-width: 350px; */
-    border: 6px solid var(--skin-color);
+    padding: 10px;
+    max-height: 450px;
+    max-width: 350px;
+    /* border: 6px solid var(--skin-color); */
 
 }
 
 .gallery .gallery-item-inner .gallery-img img {
     width: 100%;
     display: block;
-    /* object-fit: cover; */
+    object-fit: cover;
     border-radius: 30px;
     border: 6px solid var(--text-black-900);
-    /* max-height: 450px; */
-    /* min-height: 450px; */
-    /* max-width: 350px; */
+    max-height: 450px;
+    max-width: 350px;
 }
 
 .portfolio-item:hover {
